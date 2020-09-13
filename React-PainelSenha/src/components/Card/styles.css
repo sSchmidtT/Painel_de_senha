@@ -1,0 +1,98 @@
+.cardElement {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-color: var(--color-primary);
+    height: 28.0vh;
+    flex: 0 0 32.3%;
+    margin-left: 1.4rem;
+    border-radius: 1.0rem;
+    -webkit-box-shadow: 3px 4px 10px 1px rgba(0,0,0,0.52); 
+    box-shadow: 3px 4px 10px 1px rgba(0,0,0,0.52);
+    margin-bottom: 1.6rem;
+}
+
+.cardElement:last-child {
+    margin-right: 1.4rem;
+}
+
+.cardHeader {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 0;
+    flex-direction: column;
+}
+
+.cardHeader .line {
+    width: calc(100% - 3.2rem);
+    height: 0.5vh;
+    content: '';
+    background: var(--color-secundary);
+    left: 1.0rem;
+    right: 1.0rem;
+    margin: 2.0rem 0;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.52); 
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.52);
+}
+
+.cardHeader strong {
+    color: var(--color-title-in-primary);
+    font: 700 6.0rem Archivo;
+    line-height: 5.0rem;
+    text-shadow: 4px 4px 8px rgba(9,4,2,0.65);
+}
+
+.cardMain {
+    display: grid;
+    margin-left: 1.6rem;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'date senha';
+}
+
+.cardData {
+    grid-area: date;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.0rem;
+}
+
+.cardData .date {
+    font: 700 3.4rem Poppins;
+    color: var(--color-title-in-primary);
+    text-shadow: 4px 4px 8px rgba(9,4,2,0.65);
+}
+
+.cardData .time {
+    font: 700 3.75rem Poppins;
+    color: var(--color-title-in-primary);
+    padding-top: -0.5rem;
+    line-height: 3.0rem;
+    text-shadow: 4px 4px 8px rgba(9,4,2,0.65);
+}
+
+.cardSenha {
+    grid-area: senha;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.0rem;
+}
+
+.cardSenha .senhaTitle {
+    font: 700 3.4rem Poppins;
+    color: var(--color-title-in-primary);
+    text-shadow: 4px 4px 8px rgba(9,4,2,0.65);
+}
+
+.cardSenha .senha {
+    font: 700 6.5rem Poppins;
+    color: var(--color-title-in-primary);
+    line-height: 4.2rem;
+    text-shadow: 4px 4px 8px rgba(9,4,2,0.65);
+}
